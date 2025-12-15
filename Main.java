@@ -11,6 +11,10 @@ public class Main {
       // All objects can be created using this pattern:
       // ClassName objectName = new ClassName();
       BuildABear puppy = new BuildABear();
+      // "BuildABear puppy" is DECLARING a variable of type BuildABear
+      // "new BuildABear()" is CALLING a CONSTRUCTOR to set up the object
+
+
 
    }
 }
