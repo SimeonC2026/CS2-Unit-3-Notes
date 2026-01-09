@@ -11,7 +11,9 @@ public class BuildABear {
     private double price;
     private boolean hasSpeaker;
     private String recording;
-    // ENCAPSULATION: keep variables PRIVATE means (they can't be directly accessed outside of this CLASS)
+    // ENCAPSULATION: keep variables PRIVATE means 
+    // they cannot be directly accessed outside of 
+    // this Java CLASS (data is protected from users)
 
     // 2. CONSTRUCTORS (initialize values)
     // DEFAULT CONSTRUCTOR does not take any arguments (no-arg)
@@ -57,6 +59,18 @@ public class BuildABear {
     public String toString() {
         String state = "BuildABear[" + type + "," + name + "," + fillLevel + "," + price + "]";
         return state;
+    }
+
+    // MUTATORS ("setters") are void, but accept an argument to change
+    // the value of an object's instance variable to something new
+
+    // only need setters for variables you WANT the user to change
+    public void setName(String newName) {
+        // assign the object's name to the new value
+        this.name = newName;
+    }
+    public void setFillLevel(int newFL) {
+        this.fillLevel = newFL;
     }
 
 
